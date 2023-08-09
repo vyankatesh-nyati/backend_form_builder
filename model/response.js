@@ -14,4 +14,4 @@ const responseSchema = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("form", formSchema);
+module.exports = mongoose.model("Response", responseSchema);

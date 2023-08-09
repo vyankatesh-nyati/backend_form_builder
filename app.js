@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 const formRoutes = require("./routes/form");
+const responseRoutes = require("./routes/response");
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/form", formRoutes);
+app.use("/response", responseRoutes);
 
 mongoose
   .connect(
